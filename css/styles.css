@@ -1,0 +1,124 @@
+
+
+#docBody {
+	background: white;
+	border-radius: 10px;
+	font-family: 'Open Sans', sans-serif;
+	color: #262626;
+	text-align: center;
+	width: 600px; /* Make sure any resolution can display it */
+	/*margin: 0 auto;*/ /* Center it */
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+#box {
+    float: left;
+    width: 199px;
+}
+
+#nav {
+    position: fixed;
+    /*right: 5%;*/
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 198px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    float: left;
+    border-left: 1px dotted #808080;
+    /*margin-right: 10px;*/
+}
+
+#textField {
+    /*border-radius: 10px;*/
+    /*border-top: 2px dotted #808080;*/
+}
+
+body {
+	background: url('images/congruent_outline.png') repeat top center fixed;
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/*font-family: 'Roboto', sans-serif;*/
+	color: #609433;
+}
+
+/*xmp {
+    width: 100%;
+    overflow: auto;
+    background-color: #d7d7d6;
+    border-radius: 5px;
+}*/
+
+f { /*f is short for focus*/
+    color: #CC6600;
+}
+
+/* Glyph, by Harry Roberts */
+hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #d7d7d6;
+    color: #d7d7d6;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative; 
+    top: -0.7em;  
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+q { /*q is short for question*/
+	color: #609433;
+}
+
+/*pre {
+	padding: 16px;
+	overflow: auto;
+	border-radius: 3px;
+	width: auto;
+	height: auto;
+}*/
+
+.center {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.codeBox {
+    width: 100%;
+    overflow: auto;
+    background-color: #d7d7d7;
+    border-radius: 5px;
+}
+
+.OverflowAuto { /*Used so that the xmp's will overflow properly in IE*/
+    width: 100%;
+    overflow: auto;
+}
+
+.navigationButton {
+    color: #6bb245;
+    cursor: pointer;
+}
+
+.navigationButton:hover {
+    background-color: #d7d7d6;
+}
+
+.textRight {
+	text-align: right;
+}
+
+.textLeft {
+	text-align: left;
+	margin: 50px;
+}
