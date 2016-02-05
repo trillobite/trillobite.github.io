@@ -1,0 +1,40 @@
+<hr class="style-eight"></hr>
+<h3>Experimental micronDB support</h3>
+Here is a very quick and interesting trick if you download jsonHTML directly off the repository. The raw build within the repository contains micronDB. Before micronDB, jsonHTML stored all of it's objects within a hash table to allow for refreshing objects. Today, jsonHTML uses a more advanced storage system called micronDB which stores its data within a hash table. The idea behind micronDB is that it is incredibly fast, and allows for making queries. jsonHTML stores it's data within micronDB by the variable name arrdb. As you may notice, the old hash table variable name was arrdb, and this was done on purpose in order to avoid any upgrade incompatibilities in the future. So here is a very basic instruction on how to use this new feature:
+
+<div class="codeBox">
+    <xmp>
+        $jConstruct('div', {
+            text: 'wah hallo',
+            id: 'helloWorldID', //Remember, this is also a real HTML ID for CSS styling!
+        }).css({
+            'color': 'green',
+        }).appendTo('body');
+
+        $jConstruct('div', {
+            text: 'hello world',
+        }).css({
+            'color': 'green',
+        }).appendTo('body');
+
+        //oh no! You forgot to assign a variable name! that's okay!
+        var yay = arrdb.query({
+            where: {
+                text: 'hello world',
+            },
+        });
+
+        yay[0].text = 'hi again!';
+        yay[0].refresh();
+
+
+        //Don't worry, this time you at least assigned an ID.
+        var yayz = arrdb.get('helloWorldID');
+
+        yayz.text = 'What is that!';
+        yayz.refresh();
+    </xmp>
+</div>
+
+<br></br>
+Don't forget, micronDB is not about helping a bad programmer get by without assigning variables. javaScript utilizes a function-level scope, and micronDB will allow you to query through ALL jsonHTML objects on the DOM and grab whatever is outside of your function-level scope. In many cases I have used this technique in order to avoid producing highly complex code. With micronDB, there are cases where you can produce highly elegant code without many issues. Lets not forget though, jQuery does have a lot of this functionality also, which is why it has the term 'Query' within it's name. micronDB is most likely for your coding situation where you need to solve a very unique problem more elegantly. micronDB is not intended to 're-invent' the wheel, it's just there to grease it's bearings.

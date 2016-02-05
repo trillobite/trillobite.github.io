@@ -50,6 +50,7 @@ var templates = {
             link('Utilizing Your Database', 'usingDb.txt'),
             link('Adding Events', 'eventing.txt'),
             link('Refreshing Your Objects', 'refresh.txt'),
+            link('Experimental micronDB', 'micronDB.txt'),
             link('Experimental Exploits', 'experimental.txt'),
             link('Download jsonHTML', 'download.txt'),
         ];
