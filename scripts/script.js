@@ -51,6 +51,7 @@ var templates = {
             link('Adding Events', 'eventing.txt'),
             link('Refreshing Your Objects', 'refresh.txt'),
             link('Experimental micronDB', 'micronDB.txt'),
+            link('Project toadFish', 'toadFish.txt'),
             link('Experimental Exploits', 'experimental.txt'),
             link('Download jsonHTML', 'download.txt'),
         ];
