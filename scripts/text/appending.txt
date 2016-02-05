@@ -33,7 +33,7 @@ The code so far between the script tags should look like this:
 Now, When you reload the page, it should be rendered on the DOM, and you can even hit "inspect element" in your browser, and you can view the HTML which was appended to the specified HTML container, in this case the "body" of the DOM. Notice how, every object you create with jsonHTML has a random character string as an ID. This random ID is created if you don't specify one yourself, in order for jsonHTML to manage appends in it's internal workings, add flexibility, and decrease code complexity so others can view and understand your code better. It is not known if having lots of ID's decreases performance in page rendering, but so far, even big web applications don't appear to mind.
 
 <br></br>
-Soon to be in the next release, the append function now supports jQuery deferreds, you can gain this experimental functionality by simply downloading the code repository directly. Example:
+The appendTo function now supports jQuery deferreds, you can gain this functionality by upgrading to v0.9.5-beta or by simply downloading the code repository directly. Example:
 
 <div class="codeBox">
     <xmp>
