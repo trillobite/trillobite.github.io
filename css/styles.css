@@ -65,6 +65,7 @@ hr.style-eight {
     border-top: medium double #d7d7d6;
     color: #d7d7d6;
     text-align: center;
+    cursor: default;
 }
 hr.style-eight:after {
     content: "§";
