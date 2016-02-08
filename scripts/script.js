@@ -32,7 +32,7 @@ var templates = {
         var link = function(name, file) {
             return $jConstruct('div', {
                 class: 'navigationButton',
-                text: '<h5>' + name + '</h5>',
+                text: name,
             }).event('click', function() {
                 changeText('scripts/text/' + file);
             });
