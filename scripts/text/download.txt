@@ -1,7 +1,7 @@
 <hr class="style-eight"></hr>
 <h3>Download!</h3>
 
-This entire guide was written using jsonHTML! Never under-estimate its power. I cannot wait to see what projects you start, and what cultures you build. Even jsonHTML's creator does not even know all of it's abilities, so have fun, and create the future.
+This entire guide was written using jsonHTML! Never under-estimate its power. I cannot wait to see what projects you start, and what cultures you build. Even jsonHTML's creator does not know all of it's abilities, so have fun, and create the future.
 
 <br></br>
 
