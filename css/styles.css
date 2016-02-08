@@ -33,6 +33,7 @@
 }
 
 #textField {
+    cursor: default;
     /*border-radius: 10px;*/
     /*border-top: 2px dotted #808080;*/
 }
@@ -65,7 +66,6 @@ hr.style-eight {
     border-top: medium double #d7d7d6;
     color: #d7d7d6;
     text-align: center;
-    cursor: default;
 }
 hr.style-eight:after {
     content: "§";
