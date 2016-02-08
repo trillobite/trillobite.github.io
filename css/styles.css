@@ -110,6 +110,7 @@ q { /*q is short for question*/
 .navigationButton {
     color: #6bb245;
     font-size: .7em;
+    font-weight: bold;
     padding: 3px;
     cursor: pointer;
 }
