@@ -1,7 +1,11 @@
 <hr class="style-eight"></hr>
 <h3>Download!</h3>
-This entire guide was written using jsonHTML! Never under estimate its power, I cannot wait to see what things you build, 
-what cultures you spread, when you become an expert. Even jsonHTML's creator does not even know all the things it can do, 
-so have fun, and create!
+
+This entire guide was written using jsonHTML! Never under-estimate its power. I cannot wait to see what projects you start, and what cultures you build. Even jsonHTML's creator does not even know all of it's abilities, so have fun, and create the future.
+
 <br></br>
-<a href="https://github.com/trillobite/jsonHTML/releases/tag/v0.9.5-beta">Click to download and enjoy the fun!</a>
+
+Right now, jsonHTML is still beta, but an official release will come soon. I am attempting to keep everything within the same syntax, but the official release may have some changes. Currently, the code I will release officially, is completely backwards compatible to the current beta jsonHTML release. I have attempted to keep all the code very simple and easy to understand. If you wish to join this project, feel free, I will be very happy to share it with the coding community.
+
+<br></br>
+<a href="https://github.com/trillobite/jsonHTML/releases/tag/v0.9.5-beta">Click to download, and enjoy the fun!</a>
