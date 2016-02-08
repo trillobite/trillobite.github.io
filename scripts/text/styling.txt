@@ -10,7 +10,7 @@ Would if, I wanted "Hello World" to be a heading, and bold? jsonHTML has the abi
     </xmp>
 </div>
 
-<br></br>
+<br/>
 Notice how in order to make the heading size change, I manually input the number, so it will output 'h2' tags around the text. What's nice is if, I want the text to be a different color, I can simply set styling to the object using function chaining.
 <br></br>
 Here's the same object, and setting css (styling) to it:
@@ -25,7 +25,7 @@ Here's the same object, and setting css (styling) to it:
     </xmp>
 </div>
 
-<br></br>
+<br/>
 Your Completed code should now look like this:
 
 <div class="codeBox">
@@ -45,5 +45,5 @@ Your Completed code should now look like this:
     </xmp>
 </div>
 
-<br></br>
+<br/>
 Neat right? As you can see, any styling you can set using jQuery, you can utilize here, basically '.css()' is just a shortcut to jQuery, it plugs it right in.

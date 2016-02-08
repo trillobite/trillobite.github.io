@@ -15,7 +15,7 @@ First of all, you will still need to write a little bit of HTML to get started, 
     </xmp>
 </div>
 
-<br></br>
+<br/>
 As of v0.6 and newer, you can now append directly to the body, this is one of two incompatibilities between v0.5 and v0.6. This "root" div can be any current div in the DOM, you may have to experiment to see exactly how your DOM will render, and make changes to css styling, luckily you can do that on the fly which will be covered later.
 <br><br/>
 Now, within the head tags, or within an external linked script, you can begin using jsonHTML, for this example, for simplicity, were going to place the code within the html in the head between script tags.

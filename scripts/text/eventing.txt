@@ -22,7 +22,7 @@ Example using the more standard jQuery method:
     </xmp>
 </div>
 
-<br></br>
+<br/>
 Example of the newer jsonHTML event implementation:
 
 <div class="codeBox">
@@ -35,7 +35,7 @@ Example of the newer jsonHTML event implementation:
     </xmp>
 </div>
 
-<br></br>
+<br/>
 As you can tell, there are not many differences between the two, this is why native 
 event support in jsonHTML's custom syntax was implemented only recently; it was not 
 very important. Basically the short-hand for implementing events, actually does the 
@@ -86,6 +86,7 @@ As an example, I have written a small, but more advanced code example with added
     </xmp>
 </div>
 
+<br/>
 Basically this example code changes the color of the text contained in the div, 
 on click like a switch, on and off. You can see how using simple javaScript/jQuery 
 tricks, you can access what the current color of the text in the div is, and 

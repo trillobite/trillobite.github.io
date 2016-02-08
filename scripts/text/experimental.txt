@@ -24,7 +24,7 @@ is a basic example to quench your curiosity:
     </xmp>
 </div>
 
-<br></br>
+<br/>
 Another limitation with jsonHTML is the fact that the appendHTML function deep inside does not 
 recognize more than the few very basic HTML objects. One solution that I have implemented, which 
 is experimental, but I left just in case I required extended functionality, is the "html" object. 
@@ -45,7 +45,7 @@ An untested experimental example of this functionality:
     </xmp>
 </div>
 
-<br></br>
+<br/>
 <hr class="style-eight"></hr>
 
 <f>v0.9.5</f> (soon to be released)
@@ -73,7 +73,7 @@ In jsonHTML:
     </xmp>
 </div>
 
-<br></br>
+<br/>
 If you really want to dig deep into jsonHTML, and mess with it's inner workings, check out the 
 jsonHTML v0.2 style, you can still write in this style with v0.7+. Basically, your using jsonHTML 
 without touching the $jConstructor, giving you lower level access to everything whenever required.

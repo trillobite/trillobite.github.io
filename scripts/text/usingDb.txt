@@ -26,6 +26,7 @@ For the sake of simplicity of this example, lets say the data which came back fr
     </xmp>
 </div>
 
+<br/>
 Now, lets say we want to reflect that data, each object as an individual div on the DOM:
 
 <div class="codeBox">
@@ -52,6 +53,7 @@ Now, lets say we want to reflect that data, each object as an individual div on 
     </xmp>
 </div>
 
+<br/>
 Here is what the code should look like between your script tags:
 
 <div class="codeBox">
@@ -98,6 +100,7 @@ Here is what the code should look like between your script tags:
     </xmp>
 </div>
 
+<br/>
 Now it may be possible to make strings that reflect HTML, and append on the strings, depending on the data coming in, but as you can see, if your entire web application is database driven, it would take an eternity to produce a good quality flexible user environment.
 <br></br>
 One thing to remember here, is that setting the css manually for each div, is optional, you can define a class name for your jsonHTML object, or an ID, and implement styling in an external style sheet, just like you would if you were writing native html. In the above example, even though it currently does nothing, I set the parentNameObj class to "defaultClass," a css style can be added and when this object is rendered on the DOM, the browser will automatically implement the styling. It is also good to remember that jsonHTML does technically require that each object have an id, if you do not define an id, jsonHTML will come up with a random set of characters and make a generic ID for you, but if you ever want to call on this object again with jQuery, your going to have to come up with a unique ID. It is recommended in very large projects to define a unique id to each object, but jsonHTML will do the best it can to provide the most unique ID possible.
