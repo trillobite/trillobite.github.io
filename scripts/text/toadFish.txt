@@ -1,3 +1,53 @@
 <hr class="style-eight"></hr>
 <h3>Project toadFish</h3>
-Documentation for the new experimental project code-named "toadFish," will arrive shortly. The code is complete and implemented into the project, I am simply working on seeing all of it's capabilities and best uses. You can gain a sneak peak into this project by downloading the github code package. Project toadFish example code is within this project already implemented. I still have more documentation work to do on other jsonHTML features. It takes time to produce a quality guide, so please be patient. "toadFish" will also be included within the next release, and I expect to pull the project out of beta very soon! 
+Documentation for the new experimental project code-named "toadFish," will arrive shortly. The code is complete and implemented into the project, I am simply working on seeing all of it's capabilities and best uses. You can gain a sneak peak into this project by downloading the github code package.
+
+<div class="codeBox">
+    <xmp>
+
+        //this allows me to assign the same css to each object.
+        var cellCSS = function(input) { //input variable allows me to change the width of the object at will.
+            return {
+                'width': input,
+                'height': '20px',
+                'background-color': 'white',
+                'border': '1px solid black',
+                'border-radius': '5px',
+                'cursor': 'pointer',
+            }
+        };
+
+        var dimensional = toadFish.create2DArray(8); //Create a 2D array with four rows.
+
+        for(var r = 0; r < dimensional.length; ++r) { //for every row in dimensional.
+            for(var c = 0; c < 8; ++c) { //I want four columns, so loop four times.
+                dimensional[r][c] = $jConstruct('div').css(cellCSS('20px')).event('click', function() { //when the user clicks this cell, execute what is below:
+                    console.log(this); //notice that 'this' returns the html object.
+                    var thisObj = arrdb.get(this.id); //to get the jsonHTML object, we just grab it by the same id.
+                    if(this.style['background-color'] == 'white') { //When the background is white, make it gray.
+                        thisObj.css({
+                            'background-color': 'gray',
+                        }); //refresh not required for css changes.
+                    } else { //when it is any other color, just change it back to white!
+                        thisObj.css({
+                            'background-color': 'white',
+                        }); //refresh not required for css changes.
+                    }
+                });
+            }
+        }
+
+        var grid = toadFish.structure(dimensional, 'collectionTestingName'); //now convert it all into a real grid
+        var gridContainer = $jConstruct('div').addChild($jConstruct('div', {
+            text: 'Example of making a grid',
+        })).addChild(grid).css(exampleCSS);
+
+        $('document').ready(function() {
+            gridContainer.appendTo('body'); //place it onto the DOM.
+        });
+
+    </xmp>
+</div>
+
+<br/>
+Project toadFish example code is within this project already implemented. I still have more documentation work to do on other jsonHTML features. It takes time to produce a quality guide, so please be patient. "toadFish" will also be included within the next release, and I expect to pull the project out of beta very soon! 
