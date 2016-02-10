@@ -25,5 +25,5 @@ Now that you know how to use the appendTo, events, and the refresh function, we 
 <br/>
 You may recognize this code, and you should! It was used in the section demonstrating the refresh funciton. This page simply describes the theory behind object mutations. Once you understand jsonHTML Object Mutations, you have officially reached a new level of understanding in this project. The main idea to realize is that objects are mutable, and the $jConstruct function is simply creating JSON to reflect HTML. The moment you define an object as another HTML object, it will re-create the HTML to generate that same type of object. This kind of power may get you in trouble, so you will need to maintain well structured and documented code. Things can get messy when living in such an abstract level.
 
-
+<br></br>
 In the example code that you will get by downloading the jsonHTML package from github, it shows a more advanced version of this code. This is a basic example of how you can make a div mutate into a textbox and back. Take your time and study this, you will be amazed by how many times you can utilize this functionality.
