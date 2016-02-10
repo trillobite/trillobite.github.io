@@ -4,24 +4,26 @@ Now that you know how to use the appendTo, events, and the refresh function, we 
 
 <div class="codeBox">
     <xmp>
-        var helloDiv = $jConstruct('div', {
-            text: 'Hello World', //a user can simply inject html as a string here, and it will take it.
-        });
-
-        helloDiv.event('click', function() {
-        	var obj = arrdb.get(helloDiv.id); //you want to get the jsonHTML object that is currently being used.
-        	if(obj.type == 'div') { //if the object is currently a div.
-	        	obj.type = 'textbox'; //turn it into a textbox.
-	        	obj.refresh(); //make sure that the settings are applied.
-	        } else { //it is therefore a textbox.
-	        	var text = $('#'+obj.id)[0].value;
-	        	obj.type = 'div'; //turn it into a div.
-	        	obj.text = text; //set the text that the user input into the textbox.
-	        	obj.refresh(); //make sure that the settings are applied.
-	        }
+        var child1 = $jConstruct('div', {
+            text: 'Click Me!'
+        }).css(centerBorderHalf).event('click', function() { //on click event.
+            if(child1.type == 'div') {
+                child1.type = 'textbox';
+            }
+            child1.refresh(); //wow, very much yes simple!
+            $('#'+child1.id).focus();
+        }).event('blur', function() { //on blur event.
+            if(child1.type == 'textbox') {
+                child1.type = 'div';
+                child1.text = $('#'+child1.id)[0].value; //get the data that changed.
+            }
+            child1.refresh(); //Refreshes the object on the DOM containing the current changes.
         });
     </xmp>
 </div>
 
 <br/>
+You may recognize this code, and you should! It was used in the section demonstrating the refresh funciton. This page simply describes the theory behind object mutations. Once you understand jsonHTML Object Mutations, you have officially reached a new level of understanding in this project. The main idea to realize is that objects are mutable, and the $jConstruct function is simply creating JSON to reflect HTML. The moment you define an object as another HTML object, it will re-create the HTML to generate that same type of object. This kind of power may get you in trouble, so you will need to maintain well structured and documented code. Things can get messy when living in such an abstract level.
+
+
 In the example code that you will get by downloading the jsonHTML package from github, it shows a more advanced version of this code. This is a basic example of how you can make a div mutate into a textbox and back. Take your time and study this, you will be amazed by how many times you can utilize this functionality.
