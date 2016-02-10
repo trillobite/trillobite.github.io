@@ -51,6 +51,7 @@ var templates = {
             link('Adding Events', 'eventing.txt'),
             link('Refreshing Your Objects', 'refresh.txt'),
             link('Experimental micronDB', 'micronDB.txt'),
+            link('Object Mutations', 'mutations.txt'),
             link('Project toadFish', 'toadFish.txt'),
             link('Security', 'security.txt'),
             link('Experimental Exploits', 'experimental.txt'),

@@ -1,0 +1,27 @@
+<hr class="style-eight"></hr>
+<h3>Mutations</h3>
+Now that you know how to use the appendTo, events, and the refresh function, we can introduce some object mutations. The gift here is that jsonHTML has inherited javaScript's typeless programming design! javaScript variables containing jsonHTML objects don't care what type of jsonHTML object is defined (no duh, right?!). The only difference between a div and a textbox in jsonHTML is the type definition upon object creation. With this knowledge, you can make a div mutate into a textbox JUST LIKE THE THEORY OF EVOLUTION! (Wait... well... kinda... not really).
+
+<div class="codeBox">
+    <xmp>
+        var helloDiv = $jConstruct('div', {
+            text: 'Hello World', //a user can simply inject html as a string here, and it will take it.
+        });
+
+        helloDiv.event('click', function() {
+        	var obj = arrdb.get(helloDiv.id); //you want to get the jsonHTML object that is currently being used.
+        	if(obj.type == 'div') { //if the object is currently a div.
+	        	obj.type = 'textbox'; //turn it into a textbox.
+	        	obj.refresh(); //make sure that the settings are applied.
+	        } else { //it is therefore a textbox.
+	        	var text = $('#'+obj.id)[0].value;
+	        	obj.type = 'div'; //turn it into a div.
+	        	obj.text = text; //set the text that the user input into the textbox.
+	        	obj.refresh(); //make sure that the settings are applied.
+	        }
+        });
+    </xmp>
+</div>
+
+<br/>
+In the example code that you will get by downloading the jsonHTML package from github, it shows a more advanced version of this code. This is a basic example of how you can make a div mutate into a textbox and back. Take your time and study this, you will be amazed by how many times you can utilize this functionality.
