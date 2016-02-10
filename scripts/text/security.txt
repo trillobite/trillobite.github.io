@@ -1,0 +1,19 @@
+<hr class="style-eight"></hr>
+<h3>Injection</h3>
+This is a no-brainer. Always check the input from your user! jsonHTML does not care about what kind of data the user is giving it, as it simply just implements it. This is not a security flaw, this is simply a design feature, that the user can easily produce highly flexible web applications. 
+
+<div class="codeBox">
+    <xmp>
+        var helloDiv = $jConstruct('div', {
+            text: 'Hello World', //a user can simply inject html as a string here, and it will take it.
+        });
+
+        //For example:
+        var helloDiv = $jConstruct('div', {
+            text: rawUserInput, //the user inputs <div id='stuff'>this is stuff</div>
+        });
+    </xmp>
+</div>
+
+<br/>
+Never assume that the user will always treat your application fairly. At the moment this does not appear to be an incredibly terrible problem, as most of the changes will only appear on the client side, and will not affect the data on the server its self. Attempts to inject javaScript functions into this flaw have failed, so the issue is really limited to the user being able to create new div's within your document (which they can do already through the browser console). jsonHTML does not appear to produce any new security flaws within the web environment, this is just a simple warning that project managers may want to ensure that all data from the users are checked, and filtered.
